@@ -1,3 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;600&family=Yellowtail&display=swap');
+@import "reset.css";
+
+body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif; height: 1200vh;
+    color: white;
+    overflow-y: hidden; overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 100px;
+   line-height: 80%;
+   width: 100%;
+   border: 1px solid wheat;
+   padding-bottom: 10px;
+}
+
+#clock{
+    margin: 0px 0px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#login-form{
+    position: relative;
+    align-items: center;
+    border: 1px solid wheat;
+}
+
+
+.login-name{
+    font-size: 18px;
+    padding-left: 20px;
+    width: 250px;
+    height: 33px;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.login-btn {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    color: white;
+    top: 59px;
+    right: 2px;
+    border: 0px;
+    width:62px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: cadetblue;
+}
+
+#quotes {
+    position: fixed;
+    bottom: 20px;
+}
+
+
+
+/* .bgimg {
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    object-fit: cover;
+} */
+
+
 .hidden {
     display: none;
 }
