@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <title>Momentum</title>
 </head>
-<body>
-    <form id="login-form" class="hidden">
-        <input 
-            required maxlength="15" 
-            type="text" 
-            placeholder="what is you name?"
-        />
-        <input type="submit" value="Log In"/>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
+<body id="body">
+    <div class="main">
+        <h1 id="greeting" class="hidden"></h1>
+        <h2 id="clock">00:00:00</h2>
+        <form id="login-form" class="hidden">
+            <input class="login-name"
+                required maxlength="15" 
+                type="text" 
+                placeholder="what is you name?"
+            />
+            <input class="login-btn" type="submit" value="Log-In"/>
+        </form>
+    </div>
+
     <form id="todo-form">
         <input type="text" placeholder="write a To Do and Press Enter" required />
     </form>
@@ -30,6 +33,7 @@
         <span></span>
         <span></span>
     </div>
+    
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
