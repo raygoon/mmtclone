@@ -38,6 +38,11 @@ body{
     border: 1px solid wheat;
 }
 
+#weather {
+    position: fixed;
+    top:15px;
+    right: 20px;
+}
 
 .login-name{
     font-size: 18px;
