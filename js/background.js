@@ -5,7 +5,7 @@ const viewBG = document.createElement("img");
 let backImg = document.getElementById("body");
 
 viewLowBG.src = `img/low_img/${randImg}`;
-// viewBG.src = `img/${randImg}`;
+viewBG.src = `img/${randImg}`;
 viewBG.className = "bgimg";
 
 window.onload = function(){
@@ -19,8 +19,8 @@ function waitForImageToLoad(imageElement){
     return new Promise(resolve=>{imageElement.onload = resolve})
 }
 
-viewLowBG.src = `img/${randImg}`;
-waitForImageToLoad(myImage).then(()=>{
-    console.log('Loaded lol')
+waitForImageToLoad(viewLowBG).then(()=>{
+    viewLowBG.src = `img/${randImg}`;
+    return new Promise(resolve=>{viewLowBG.onload = resolve});
 });
 
