@@ -9,29 +9,44 @@
 </head>
 <body id="body">
     <div class="main">
-        <h1 id="greeting" class="hidden"></h1>
+        <div id="greeting" class="hidden">
+            <span></span>
+        </div>
         <h2 id="clock">00:00:00</h2>
         <form id="login-form" class="hidden">
             <input class="login-name"
-                required maxlength="15" 
+                required maxlength="20" 
                 type="text" 
                 placeholder="what is you name?"
             />
             <input class="login-btn" type="submit" value="Log-In"/>
         </form>
     </div>
-
-    <form id="todo-form">
-        <input type="text" placeholder="write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
+    <div class="todoPosition">
+        <div>
+            <form id="todo-form">
+                <input type="text" placeholder="●  Write a To Do and Press Enter  ●" required />
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
     <div id="quotes">
         <span></span>
         <span></span>
     </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
+    <div class="wizTopRight">
+        <!-- <div id="weather">
+            <span></span>
+            <span></span>
+        </div> -->
+        <div>
+            <div class="weatherIcon">
+            </div>
+            <div class="weatherText">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
     
     <script src="js/greeting.js"></script>
@@ -40,5 +55,6 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="https://kit.fontawesome.com/a3d415a79d.js" crossorigin="anonymous"></script>
 </body>
 </html>

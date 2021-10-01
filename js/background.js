@@ -1,4 +1,4 @@
-const images = ["a.jpg","b.jpg","c.jpg","d.jpg","e.jpg","f.jpg","g.jpg"];
+const images = ["a.jpg","b.jpg","c.jpg","d.jpg","e.jpg","f.jpg","g.jpg","h.jpg","i.jpg","m.jpg"];
 const randImg =images[Math.floor(Math.random() * images.length)];
 const viewBG = document.createElement("img");
 
@@ -11,6 +11,5 @@ window.onload = function(){
     backImg.backgroundSize = "cover";
     backImg.backgroundImage =`url(${viewBG.src})`;
 }
-
 
 // document.body.appendChild(viewBG);
