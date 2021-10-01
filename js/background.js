@@ -11,11 +11,10 @@ viewBG.className = "bgimg";
 window.onload = function(){
     backImg.backgroundRepeat = "repeat";
     backImg.backgroundSize = "cover";
-    backImg.backgroundImage =`url(${viewLowBG.src})`;
-    // changeHighRes();
-    setTimeout(changeHighRes, 3000);
+    backImg.backgroundImage =`url(${viewBG.src}), url(${viewLowBG.src})`;
+    // setTimeout(changeHighRes, 3000);
 }
 
-function changeHighRes() {
-    backImg.backgroundImage =`url(${viewBG.src})`;
-}
+// function changeHighRes() {
+//     backImg.backgroundImage =`url(${viewBG.src})`;
+// }
