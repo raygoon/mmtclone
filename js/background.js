@@ -10,7 +10,7 @@ window.onload = function(){
     const backImg = document.getElementById("body").style;
     backImg.backgroundRepeat = "repeat";
     backImg.backgroundSize = "cover";
-    backImg.backgroundImage =`url(${viewBG.src}),url(${viewLowBG.src})`;
+    backImg.backgroundImage =`url(${viewLowBG.src}), url(${viewBG.src})`;
 }
 
 // document.body.appendChild(viewBG);
