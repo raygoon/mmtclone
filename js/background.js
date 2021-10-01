@@ -3,13 +3,14 @@ const randImg =images[Math.floor(Math.random() * images.length)];
 const viewBG = document.createElement("img");
 
 viewBG.src = `img/${randImg}`;
+viewLowBG.src = `img/low_img/${randImg}`;
 viewBG.className = "bgimg";
 
 window.onload = function(){
     const backImg = document.getElementById("body").style;
     backImg.backgroundRepeat = "repeat";
     backImg.backgroundSize = "cover";
-    backImg.backgroundImage =`url(${viewBG.src}),url(/low_img/${viewBG.src})`;
+    backImg.backgroundImage =`url(${viewBG.src}),url(${viewLowBG.src})`;
 }
 
 // document.body.appendChild(viewBG);
