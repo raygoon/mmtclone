@@ -2,21 +2,25 @@ const images = ["a.jpg","b.jpg","c.jpg","d.jpg","e.jpg","f.jpg","g.jpg","h.jpg",
 const randImg = images[Math.floor(Math.random() * images.length)];
 const viewLowBG = document.createElement("img");
 const viewBG = document.createElement("img");
-let backImg = document.getElementById("body").style;
+let backImg = document.getElementById("body");
 
 viewLowBG.src = `img/low_img/${randImg}`;
-viewBG.src = `img/${randImg}`;
+// viewBG.src = `img/${randImg}`;
 viewBG.className = "bgimg";
 
 window.onload = function(){
-    backImg.backgroundRepeat = "repeat";
-    backImg.backgroundSize = "cover";
-    backImg.backgroundImage =`url(${viewLowBG.src})`;
-    if (viewBG.complete === true) {
-        changeHighRes()
-    }
+    backImg.style.backgroundRepeat = "repeat";
+    backImg.style.backgroundSize = "cover";
+    backImg.style.backgroundImage =`url(${viewLowBG.src})`;
+    console.log(backImg.style.backgroundImage);
 }
 
-function changeHighRes() {
-    backImg.backgroundImage =`url(${viewBG.src})`;
+function waitForImageToLoad(imageElement){
+    return new Promise(resolve=>{imageElement.onload = resolve})
 }
+
+viewLowBG.src = `img/${randImg}`;
+waitForImageToLoad(myImage).then(()=>{
+    console.log('Loaded lol')
+});
+
