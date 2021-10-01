@@ -10,14 +10,16 @@ function saveToDos() {
 }
 
 function delTodo(event) {
-    const li = event.target.parentElement;
-    li.remove();
+    let li = event.target.parentElement;
+    if (event.target.tagName === "I") {
+      li = event.target.parentElement.parentElement;
+    }
+    li.parentElement.remove();
     toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
     saveToDos();
 }
 
 function paintToDo(newTodo){
-    
     const li = document.createElement("li");
     li.id = newTodo.id;
 
@@ -25,19 +27,25 @@ function paintToDo(newTodo){
     span.innerText = newTodo.text;
 
     const button = document.createElement("button");
-    button.innerText = "❌";
-    button.addEventListener("click", delTodo)
+
+    const normalDiv = document.createElement("div");
+
+    const div = document.createElement("div");
+    div.setAttribute('class','divSpace');
+
+    button.innerHTML = "<i class='fas fa-times-circle'></i>";
+    button.addEventListener("click", delTodo);
+    
     li.appendChild(span);
     li.appendChild(button);
-    toDoList.appendChild(li);
+    div.appendChild(li);
+    toDoList.appendChild(div);
 }
 
 function handleToDoSubmit(event){
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = "";
-    
-
     const newTodoObj = {
       text:newTodo,
       id:Date.now(),
