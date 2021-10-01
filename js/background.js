@@ -12,8 +12,8 @@ window.onload = function(){
     backImg.backgroundRepeat = "repeat";
     backImg.backgroundSize = "cover";
     backImg.backgroundImage =`url(${viewLowBG.src})`;
-    changeHighRes();
-    // setTimeout(changeHighRes, 1000);
+    // changeHighRes();
+    setTimeout(changeHighRes, 3000);
 }
 
 function changeHighRes() {
