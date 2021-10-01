@@ -12,7 +12,7 @@ window.onload = function(){
     backImg.backgroundRepeat = "repeat";
     backImg.backgroundSize = "cover";
     backImg.backgroundImage =`url(${viewLowBG.src})`;
-    if (viewLowBG.complete === true) {
+    if (viewBG.complete === true) {
         changeHighRes()
     }
 }
