@@ -146,6 +146,8 @@ body{
 .wizTopRight {
     z-index: 0;
     position: absolute;
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -162,7 +164,7 @@ body{
 .weatherText {
     position: absolute;
     font-size: 14px;
-    top: 90px;
+    top: 114px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
 }
 .weatherIcon {
