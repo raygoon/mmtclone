@@ -11,7 +11,6 @@ function onGeoOk(position){
 
         weatherData = data.weather[0].main;
         wIcon = data.weather[0].icon;
-        console.log(wIcon);
         weather.innerText = `${data.main.temp}℃`;
         weatherIcon.innerHTML = `<img src='img/wicon/${wIcon}.png'/>`;
         city.innerText = `/ ${data.name}`;
