@@ -15,7 +15,12 @@ body{
     background-position: calc(100% - 50%) 0px; 
 }
 
-
+.root { 
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 .main {
    display: flex;
@@ -96,12 +101,9 @@ body{
     display: flex;
     justify-content: right;
     align-items: end;
-    background-color: wheat;
 }
 
 .todoPosition > div {
-    left: 0px;
-    bottom: 0px;
     background-color: rgba(39, 39, 39, 0.541);
     width: 300px;
     padding: 10px 10px 5px 10px;
