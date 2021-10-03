@@ -89,6 +89,8 @@ body{
 .todoPosition {
     z-index: 1;
     position: absolute;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -148,8 +150,8 @@ body{
 .wizTopRight {
     z-index: 0;
     position: absolute;
-    left: 0;
-    top: 0;
+    right: 0px;
+    top: 0px;
     width: 100%;
     height: 100%;
     display: flex;
