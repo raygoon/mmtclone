@@ -9,11 +9,13 @@ body{
     align-items: center;
     font-family: 'Open Sans', sans-serif; 
     color: white;
-    overflow: hidden;
+    overflow-y: hidden; overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     background-position: calc(100% - 50%) 0px; 
 }
+
+
 
 .main {
    display: flex;
@@ -57,7 +59,7 @@ body{
     width: 250px;
     height: 34px;
     border: 0px;
-    border-radius: 16px;
+    border-radius: 17px;
 }
 
 .login-btn {
