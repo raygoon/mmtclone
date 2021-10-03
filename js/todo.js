@@ -28,8 +28,6 @@ function paintToDo(newTodo){
 
     const button = document.createElement("button");
 
-    const normalDiv = document.createElement("div");
-
     const div = document.createElement("div");
     div.setAttribute('class','divSpace');
 
