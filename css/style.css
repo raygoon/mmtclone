@@ -96,6 +96,7 @@ body{
     display: flex;
     justify-content: right;
     align-items: end;
+    background-color: wheat;
 }
 
 .todoPosition > div {
